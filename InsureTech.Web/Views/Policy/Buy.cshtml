@@ -1,0 +1,92 @@
+﻿@model InsureTech.Application.ViewModels.BuyPolicyViewModel
+
+@{
+    ViewData["Title"] = "Buy Policy";
+}
+
+<h2 class="text-center">Buy Policy</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success text-center">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger text-center">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<div class="container mt-4" style="height: 80%; width: 100%;">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header text-center bg-primary text-white">
+                    <h4>Buy Policy</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Buy" method="post" class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <label asp-for="Policy.PolicyTypeId" class="control-label"></label>
+                            <select asp-for="Policy.PolicyTypeId" class="form-control" asp-items="@(new SelectList(Model.PolicyTypes, "Id", "Name"))">
+                                <option value="">Select Policy Type</option>
+                            </select>
+                            <span asp-validation-for="Policy.PolicyTypeId" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Policy.FullName" class="control-label"></label>
+                            <input asp-for="Policy.FullName" class="form-control" />
+                            <span asp-validation-for="Policy.FullName" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Policy.DateOfBirth" class="control-label"></label>
+                            <input asp-for="Policy.DateOfBirth" type="date" class="form-control" />
+                            <span asp-validation-for="Policy.DateOfBirth" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Policy.NationalIdOrPassportNumber" class="control-label"></label>
+                            <input asp-for="Policy.NationalIdOrPassportNumber" class="form-control" />
+                            <span asp-validation-for="Policy.NationalIdOrPassportNumber" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Policy.PhoneNumber" class="control-label"></label>
+                            <input asp-for="Policy.PhoneNumber" class="form-control" />
+                            <span asp-validation-for="Policy.PhoneNumber" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Policy.EmailAddress" class="control-label"></label>
+                            <input asp-for="Policy.EmailAddress" class="form-control" type="email" />
+                            <span asp-validation-for="Policy.EmailAddress" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Policy.ResidentialAddress" class="control-label"></label>
+                            <input asp-for="Policy.ResidentialAddress" class="form-control" />
+                            <span asp-validation-for="Policy.ResidentialAddress" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Policy.Occupation" class="control-label"></label>
+                            <input asp-for="Policy.Occupation" class="form-control" />
+                            <span asp-validation-for="Policy.Occupation" class="text-danger"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

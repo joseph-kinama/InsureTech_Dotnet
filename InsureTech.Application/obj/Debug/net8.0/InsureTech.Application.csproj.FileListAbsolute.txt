@@ -1,0 +1,16 @@
+C:\Users\Joseph kinama\Desktop\C_SHARP PROJECTS\InsureTech\InsureTech.Application\bin\Debug\net8.0\InsureTech.Application.deps.json
+C:\Users\Joseph kinama\Desktop\C_SHARP PROJECTS\InsureTech\InsureTech.Application\bin\Debug\net8.0\InsureTech.Application.dll
+C:\Users\Joseph kinama\Desktop\C_SHARP PROJECTS\InsureTech\InsureTech.Application\bin\Debug\net8.0\InsureTech.Application.pdb
+C:\Users\Joseph kinama\Desktop\C_SHARP PROJECTS\InsureTech\InsureTech.Application\bin\Debug\net8.0\InsureTech.Domain.dll
+C:\Users\Joseph kinama\Desktop\C_SHARP PROJECTS\InsureTech\InsureTech.Application\bin\Debug\net8.0\InsureTech.Domain.pdb
+C:\Users\Joseph kinama\Desktop\C_SHARP PROJECTS\InsureTech\InsureTech.Application\obj\Debug\net8.0\InsureTech.Application.csproj.AssemblyReference.cache
+C:\Users\Joseph kinama\Desktop\C_SHARP PROJECTS\InsureTech\InsureTech.Application\obj\Debug\net8.0\InsureTech.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joseph kinama\Desktop\C_SHARP PROJECTS\InsureTech\InsureTech.Application\obj\Debug\net8.0\InsureTech.Application.AssemblyInfoInputs.cache
+C:\Users\Joseph kinama\Desktop\C_SHARP PROJECTS\InsureTech\InsureTech.Application\obj\Debug\net8.0\InsureTech.Application.AssemblyInfo.cs
+C:\Users\Joseph kinama\Desktop\C_SHARP PROJECTS\InsureTech\InsureTech.Application\obj\Debug\net8.0\InsureTech.Application.csproj.CoreCompileInputs.cache
+C:\Users\Joseph kinama\Desktop\C_SHARP PROJECTS\InsureTech\InsureTech.Application\obj\Debug\net8.0\InsureTech.Application.sourcelink.json
+C:\Users\Joseph kinama\Desktop\C_SHARP PROJECTS\InsureTech\InsureTech.Application\obj\Debug\net8.0\InsureTe.4F913F1E.Up2Date
+C:\Users\Joseph kinama\Desktop\C_SHARP PROJECTS\InsureTech\InsureTech.Application\obj\Debug\net8.0\InsureTech.Application.dll
+C:\Users\Joseph kinama\Desktop\C_SHARP PROJECTS\InsureTech\InsureTech.Application\obj\Debug\net8.0\refint\InsureTech.Application.dll
+C:\Users\Joseph kinama\Desktop\C_SHARP PROJECTS\InsureTech\InsureTech.Application\obj\Debug\net8.0\InsureTech.Application.pdb
+C:\Users\Joseph kinama\Desktop\C_SHARP PROJECTS\InsureTech\InsureTech.Application\obj\Debug\net8.0\ref\InsureTech.Application.dll

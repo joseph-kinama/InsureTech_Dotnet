@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\InsureTech.Web.props" />
+</Project>

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "InsureTech.Application/1.0.0": {
+        "dependencies": {
+          "InsureTech.Domain": "1.0.0"
+        },
+        "runtime": {
+          "InsureTech.Application.dll": {}
+        }
+      },
+      "InsureTech.Domain/1.0.0": {
+        "runtime": {
+          "InsureTech.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "InsureTech.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InsureTech.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

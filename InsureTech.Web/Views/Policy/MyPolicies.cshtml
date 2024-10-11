@@ -1,0 +1,89 @@
+﻿@model List<InsureTech.Domain.Entities.Policy>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>My Policies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+            font-weight: bold;
+        }
+
+        td {
+            color: #666;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>My Policies</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Policy ID</th>
+                <th>Policy Type</th>
+                <th>Full Name</th>
+                <th>Date of Birth</th>
+                <th>National ID/Passport Number</th>
+                <th>Phone Number</th>
+                <th>Email Address</th>
+                <th>Residential Address</th>
+                <th>Occupation</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var policy in Model)
+            {
+                <tr>
+                    <td>@policy.Id</td>
+                    <td>@policy.PolicyType.Name</td>
+                    <td>@policy.PersonalInformation.FullName</td>
+                    <td>@policy.PersonalInformation.DateOfBirth.ToShortDateString()</td>
+                    <td>@policy.PersonalInformation.NationalIdOrPassportNumber</td>
+                    <td>@policy.PersonalInformation.PhoneNumber</td>
+                    <td>@policy.PersonalInformation.EmailAddress</td>
+                    <td>@policy.PersonalInformation.ResidentialAddress</td>
+                    <td>@policy.PersonalInformation.Occupation</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
